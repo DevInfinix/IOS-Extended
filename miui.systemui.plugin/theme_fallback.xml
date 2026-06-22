@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<MIUI_Theme_Values>
+<!--mod DevInfinix-->
+    <drawable name="miui_volume_expand_background.png">detail_panel_background.9.png</drawable>
+	<drawable name="miui_volume_expand_background.9.png">detail_panel_background.9.png</drawable>
+	<drawable name="miui_volume_expand_background_cc.9.png">detail_panel_background.9.png</drawable>
+	<drawable name="secondary_panel_background.9.png">detail_panel_background.9.png</drawable>
+	<drawable name="qs_control_detail_bg.9.png">detail_panel_background.9.png</drawable>	<drawable name="secondary_panel_background.9.png">detail_panel_background.9.png</drawable>
+	<drawable name="miui_volume_expand_background_cc.9.png">detail_panel_background.9.png</drawable>
+	<drawable name="qs_control_detail_bg.9.png">detail_panel_background.9.png</drawable>
+	<drawable name="o3_miui_volume_expand_background_cc.9.png">miui_volume_expand_background_cc.9.png</drawable>
+   <drawable name="miui_volume_expand_background.png">detail_panel_background.9.png</drawable>
+    <drawable name="miui_volume_expand_background.9.png">detail_panel_background.9.png</drawable>
+    <drawable name="miui_volume_expand_background_cc.9.png">detail_panel_background.9.png</drawable>
+    <drawable name="qs_control_detail_bg.9.png">detail_panel_background.9.png</drawable>
+    <drawable name="secondary_panel_background.9.png">detail_panel_background.9.png</drawable>
+    
+</MIUI_Theme_Values>

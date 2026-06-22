@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<theme>
+<version><![CDATA[OS3 v1.2]]></version>
+<uiVersion>17</uiVersion>
+<author><![CDATA[DevInfinix]]></author>
+<designer><![CDATA[DevInfinix]]></designer>
+<title><![CDATA[Super26 Color]]></title>
+<description><![CDATA[Channel : https://t.me/miuithemevn/34 
+ Phản hồi : https://t.me/kbMiuiVietNam/392
+ Facebook : https://www.facebook.com/groups/miuithemevietnam/
+ 
+ DevInfinix GROUP XIAOMI THEME VIỆT NAM]]></description>
+<authors>
+<author locale="en_US"><![CDATA[DevInfinix]]></author>
+<author locale="zh_CN"><![CDATA[DevInfinix]]></author>
+</authors>
+<designers>
+<designer locale="en_US"><![CDATA[DevInfinix]]></designer>
+<designer locale="zh_CN"><![CDATA[DevInfinix]]></designer>
+<designer locale="vi_VN"><![CDATA[DevInfinix]]></designer>
+</designers>
+<titles>
+<title locale="en_US"><![CDATA[Super26 Color]]></title>
+<title locale="zh_CN"><![CDATA[Super26 Color]]></title>
+</titles>
+<descriptions>
+<description locale="en_US"><![CDATA[Channel : https://t.me/miuithemevn/34 
+ Phản hồi : https://t.me/kbMiuiVietNam/392
+ Facebook : https://www.facebook.com/groups/miuithemevietnam/
+
+ DevInfinix GROUP XIAOMI THEME VIỆT NAM]]></description>
+<description locale="zh_CN"><![CDATA[Channel : https://t.me/miuithemevn/34 
+ Phản hồi : https://t.me/kbMiuiVietNam/392
+ Facebook : https://www.facebook.com/groups/miuithemevietnam/
+ DevInfinix GROUP XIAOMI THEME VIỆT NAM]]></description>
+<description locale="vi_VN"><![CDATA[Channel : https://t.me/miuithemevn/34 
+ Phản hồi : https://t.me/kbMiuiVietNam/392
+ Facebook : https://www.facebook.com/groups/miuithemevietnam/
+ DevInfinix GROUP XIAOMI THEME VIỆT NAM]]></description>
+</descriptions>
+<miuiAdapterVersion>8.2</miuiAdapterVersion>
+</theme>

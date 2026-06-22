@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- 圆角（与系统一致，iOS通常略大，可调整） -->
+    <corners android:radius="36dp" />
+
+    <!-- 背景填充（半透明，保留玻璃效果） -->
+    <solid android:color="@color/folder_background_light" />
+
+    <!-- 👇 新增边框（iOS风格）👇 -->
+    <stroke
+        android:width="1.2dp"       <!-- 边框宽度，iOS约1-1.5dp -->
+        android:color="#26000000"   <!-- 边框颜色：浅灰（15%黑），适配浅色模式 -->
+        android:color="#33FFFFFF" /> <!-- 边框颜色：浅白（20%白），适配深色模式 -->
+    <!-- 👆 新增边框 👆 -->
+
+    <!-- 内边距（可选，防止图标贴边框） -->
+    <padding
+        android:left="2dp"
+        android:top="2dp"
+        android:right="2dp"
+        android:bottom="2dp" />
+</shape>

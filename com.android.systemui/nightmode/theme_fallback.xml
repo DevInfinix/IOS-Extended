@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MIUI_Theme_Values>
+<drawable name="toggle_slider_background_disabled.9.png">1.9.png</drawable>
+<drawable name="toggle_slider_background.9.png">2.9.png</drawable>
+<drawable name="toggle_slider_detail_background.9.png">3.9.png</drawable>
+ <drawable name="toggle_slider_detail_progress_background.9.png">4.9.png</drawable>
+ <drawable name="toggle_slider_detail_progress.9.png">5.9.png</drawable>
+ <drawable name="toggle_slider_detail_secondary_progress_background.9.png">6.9.png</drawable>
+ <drawable name="toggle_slider_progress_background_disabled.9.png">7.9.png</drawable>
+ <drawable name="toggle_slider_progress_background.9.png">8.9.png</drawable>
+ <drawable name="toggle_slider_progress_disabled_background.9.png">9.9.png</drawable>
+<drawable name="external_entry_background.9.png">eeb.9.png</drawable>
+ <drawable name="media_player_background.9.png">yy.png</drawable>
+ <drawable name="o3_miui_volume_expand_background_cc.9.png">ylcc.9.png</drawable>
+ <drawable name="o3_miui_volume_expand_background.9.png">ylep.9.png</drawable>
+ <drawable name="o3_miui_volume_progress_transparent_drawable_expanded.9.png">yl1.9.png</drawable>
+  <drawable name="o3_miui_volume_progress_transparent_drawable.9.png">yl2.9.png</drawable>
+  <drawable name="o3_miui_volume_progress_view_bg_drawable.9.png">yl3.9.png</drawable>
+  <drawable name="o3_miui_volume_ringer_btn_first_bg_cc.9.png">bt1.9.png</drawable>
+  <drawable name="o3_miui_volume_ringer_btn_first_bg.9.png">bt2.9.png</drawable>
+  <drawable name="o3_miui_volume_seekbar_backgroud_cc.9.png">yl4.9.png</drawable>
+ <drawable name="secondary_panel_background.9.png">sb.9.png</drawable>
+  </MIUI_Theme_Values>

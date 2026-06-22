@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--DevInfinix XIAOMI THEME VIỆT NAM-->
+<Icon height="192" resDensity="480" screenWidth="1080" version="2" width="192" frameRate="0" useVariableUpdater="DateTime.Second">
+<!--DevInfinix-->
+<Var expression="not(ge(#hour24,6)*le(#hour24,18))" name="__DevInfinix_isNight"/>
+    
+   <!-- <Var name="DevInfinix_Icon" expression="ifelse(isnull(#DevInfinix_Icon),0,#DevInfinix_Icon)"/>  -->
+  
+ <Image align="center" alignV="center" x="96" y="96" src="0.png" visibility="#__DevInfinix_isNight==0)"/>
+<Image align="center" alignV="center" x="96" y="96" src="1.png" visibility="#__DevInfinix_isNight==1"/>
+   
+</Icon>

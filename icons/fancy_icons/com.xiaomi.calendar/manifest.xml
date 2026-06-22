@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Icon version="2" frameRate="30" width="192" height="192" screenWidth="1080" useVariableUpdater="DateTime.Minute">
+<!--DevInfinix-->
+    <Image x="192/2" y="192/2" align="center" alignV="center" srcExp="'calendar_'+#date+'.png'" />
+    <Text name="weekSize" bold="true" pivotX="#weekSize.text_width/2" pivotY="#weekSize.text_height/2" scale="min(1,190/#weekSize.text_width)" x="192/2" y="192/2-70" align="center" size="28" fontFamily="mipro-demibold" color="#FFFF0000" textExp="strToUpperCase(ifelse(strContains(formatDate('EEEE',#time_sys),''),formatDate('EEEE',#time_sys),formatDate('EE',#time_sys)))" alpha="255*0.75" />
+</Icon>

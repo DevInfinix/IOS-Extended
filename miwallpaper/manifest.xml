@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Mod DevInfinix-->
+<MiWallpaper version="2" frameRate="30" screenWidth="1080" customizedDarkModeWallpaper="true" useHardwareCanvas="true"> 
+  <ExternalCommands> 
+    <Trigger action="resume"> 
+      <AnimationCommand target="lh_ani" command="play"/>
+       <AnimationCommand target="lh_ani_2" command="play"/>
+           <AnimationCommand command="play" target="framerateControllerAni"/>    
+    </Trigger> 
+  </ExternalCommands>  
+  <VariableBinders> 
+    <!-- 天气接口 -->  
+    <ContentProviderBinder name="WeatherProvider" uri="content://weather/actualWeatherData/1" columns="city_name,weather_type,aqilevel,description,temperature,temperature_range" countName="hasweather"> 
+      <Variable name="weather_location" type="string" column="city_name"/>  
+      <Variable name="weather_id" type="int" column="weather_type"/>  
+      <Variable name="weather_type" column="weather_type" type="string[]"/>  
+      <Variable name="weather_temperature" type="string" column="temperature"/>  
+      <Variable name="weather_description" type="string" column="description"/>  
+      <Variable name="weather_aqi" type="int" column="aqilevel"/>  
+      <Variable name="weather_temphigh_0" type="string" column="tmphighs" rows="0"/>  
+      <Variable name="weather_templow_0" type="string" column="tmplows" rows="0"/>  
+      <Variable name="weather_temphigh" column="tmphighs" type="string[]"/>  
+      <Variable name="weather_templow" column="tmplows" type="string[]"/>  
+      <Variable name="weather_sunrise" type="int" column="sunrise"/>  
+      <Variable name="weather_sunset" type="int" column="sunset"/>  
+      <Variable name="weather_wind" type="string" column="wind"/>  
+      <Trigger> 
+        <!-- 天气类型简化版；可用于天气图标展示。例如：srcid="#weatherId" -->  
+        <VariableCommand name="weatherId" expression="ifelse(#weather_id}25||#weather_id{0,0, (#weather_id}=4**#weather_id{=6||#weather_id}=8**#weather_id{=11||#weather_id==25),4,#weather_id}=13**#weather_id{=17,13 ,#weather_id}=18**#weather_id{=21||#weather_id==23,18,#weather_id)"/>  
+        <VariableCommand name="air_quality_0" expression="ifelse(ge(#weather_aqi,0)*le(#weather_aqi,50),'优',gt(#weather_aqi,50)*le(#weather_aqi,100),'良好',gt(#weather_aqi,100)*le(#weather_aqi,150),'轻度污染',gt(#weather_aqi,150)*ge(#weather_aqi,200),'中度污染',gt(#weather_aqi,200)*le(#weather_aqi,300),'重度污染',gt(#weather_aqi,300),'严重污染','获取信息异常')" type="string"/> 
+      </Trigger> 
+      </ContentProviderBinder> 
+    <BroadcastBinder action="android.intent.action.KEYCODE_POWER_UP">
+      <Trigger>
+        <AnimationCommand command="play(0,0)" target="KB_Ani"/>
+        <AnimationCommand command="play(0,0)" target="CR_Ani"/>
+      </Trigger>
+    </BroadcastBinder>
+    <!-- 每次解锁触发一次，无论是密码解锁还是指纹解锁 -->
+
+    <BroadcastBinder action="android.intent.action.USER_PRESENT">
+      <Trigger>
+        <AnimationCommand command="play" target="KB_Ani"/>
+        <AnimationCommand command="play" target="CR_Ani"/>
+      </Trigger>
+    </BroadcastBinder>
+    <BroadcastBinder action="Civet"> 
+    <Variable name="DevInfinix_Ani" type="number" extra="A_DevInfinix_Ani"/>  
+    
+      <Variable name="default_bz" type="number" extra="extra_ysjsbz"/>  
+      <Variable name="desk_menu_tag" type="number" extra="extra_menu_tag"/>  
+      <Variable name="island_y" type="number" extra="send_island_y"/>  
+      <Variable name="island_x" type="number" extra="send_island_x"/>  
+      <Variable name="circle_y" type="number" extra="send_circle_y"/>  
+      <Variable name="island_id" type="number" extra="send_island_id"/>  
+      <Variable name="bz_scale_num" type="number" extra="send_bz_scale_num"/>  
+      <Variable name="js_pic_vis" type="number" extra="send_js_pic_vis"/>  
+      <Variable name="mSugerKey" type="string" extra="mSugerKey_Config"/>  
+      <Variable name="bg_dark" type="number" extra="send_bg_dark"/>  
+      <Variable name="darkmode_wallpaper_a" type="number" extra="send_darkmode_wallpaper_a"/>  
+      <Variable name="syztsj" type="number" extra="send_syztsj"/>  
+      <Variable name="dock" type="number" extra="send_dock"/>  
+      <Variable name="dock_menu" type="number" extra="send_dock_menu"/>  
+      <Variable name="home_island" type="number" extra="send_home_island"/>  
+      <Variable name="hair_style" type="number" extra="send_hair_style"/>  
+      <Variable name="bg_blur" type="number" extra="send_bg_blur"/>  
+      <Variable name="dock_y" type="number" extra="send_dock_y"/>  
+      <Variable name="dock_alpha" type="number" extra="send_dock_alpha"/>  
+      <Variable name="sunRise0Set1" type="number" extra="send_sunRise0Set1"/>  
+      <Variable name="HairStyle" type="number" extra="send_HairStyle"/>  
+      <Variable name="HairStyle_vis" type="number" extra="send_HairStyle_vis"/> 
+      <Variable name="js_shadow" type="number" extra="send_js_shadow"/>
+      <Variable name="home_Gravity_vis" type="number" extra="send_home_Gravity_vis"/>  
+    </BroadcastBinder> 
+    
+    
+           <SensorBinder type="gravity" rate="1">
+        <Variable name="gravity_x" index="0"/>
+        <Variable name="gravity_y" index="1"/>
+        <Variable name="gravity_z" index="2"/>
+    </SensorBinder> 
+    
+    
+    
+    
+    
+  </VariableBinders>  
+  <Var name="dock_a" expression="255*ifelse(isnull(#dock_alpha),50,#dock_alpha)/100" type="number"/>  
+  <Var name="btnv" expression="ifelse(gt(abs(#touch_begin_x-#touch_x),20),0,gt(abs(#touch_begin_y-#touch_y),20),0,1)"/>  
+  <Var name="dock_color" expression="ifelse(#__darkmode,'#000000','#ffffff')" type="string"/>  
+  <Var name="dock_h" expression="254" type="number" const="true"/>  
+  <Var name="bg_scale" expression="ifelse((#screen_height/#suger_bg.bmp_height)}(#screen_width/#suger_bg.bmp_width),#screen_height/#suger_bg.bmp_height,#screen_width/#suger_bg.bmp_width)-1"/>  
+  <Var name="mSugerRightKey" expression="'suger'" type="string"/>  
+  <Var name="island_bg_w"> 
+    <VariableAnimation loop="false" initPause="true"> 
+      <AniFrame value="0" time="0" easeType="BackEaseOut"/>  
+      <AniFrame value="1" time="1000" easeType="BackEaseOut"/> 
+    </VariableAnimation> 
+  </Var>  
+  <Var name="lh_ani"> 
+    <VariableAnimation loop="false" initPause="true"> 
+      <AniFrame value="0" time="0" easeType="BackEaseOut"/>  
+      <AniFrame value="0" time="200" easeType="BackEaseOut"/>  
+      <AniFrame value="1" time="800" easeType="BackEaseOut"/> 
+    </VariableAnimation> 
+  </Var>  
+  <Var name="KB_Ani">
+    <VariableAnimation initPause="fasle" loop="false">
+      <AniFrame easeType="QuadEaseOut" time="0" value="0"/>
+      <AniFrame time="10" value="1"/>
+      <Triggers>
+        <Trigger action="end">
+          <LoopCommand count="16" indexName="__CR">
+            <VariableCommand expression="rand()*#screen_width" index="#__CR" name="CR_X" type="number[]"/>
+            <VariableCommand expression="rand()*#screen_height" index="#__CR" name="CR_Y" type="number[]"/>
+            <VariableCommand expression="80+rand()*120" index="#__CR" name="CR_R" type="number[]"/>
+            <VariableCommand expression="50+rand()*125" index="#__CR" name="CR_A" type="number[]"/>
+          </LoopCommand>
+        </Trigger>
+      </Triggers>
+    </VariableAnimation>
+  </Var>
+  <Var name="CR_Ani">
+    <VariableAnimation initPause="fasle" loop="false">
+      <AniFrame easeType="QuadEaseOut" time="0" value="0"/>
+      <AniFrame time="3600" value="1"/>
+    </VariableAnimation>
+  </Var>
+    <Var name="lh_ani_2"> 
+    <VariableAnimation loop="false" initPause="true"> 
+      <AniFrame value="0" time="0" easeType="BackEaseOut"/>  
+      <AniFrame value="0" time="200" easeType="BackEaseOut"/>  
+      <AniFrame value="1" time="600" easeType="BackEaseOut"/>
+      <AniFrame value="0" time="1100" easeType="BackEaseOut"/>  
+    </VariableAnimation> 
+  </Var> 
+    <!-- 动态帧率 -->  
+  <FramerateController name="framerateControllerAni" initPause="true" loop="false"> 
+    <ControlPoint frameRate="240" time="0"/>  
+    <ControlPoint frameRate="240" time="1100"/>  
+    <ControlPoint frameRate="0" time="1101"/> 
+  </FramerateController>  
+  <Var name="GravityScale" expression="0.17-#bz_scale" type="number"/> 
+  <Var name="HairStyle" expression="ifelse(isnull(#HairStyle),0,#HairStyle)" type="number"/>  
+  <Var name="HairStyle_vis" expression="ifelse(isnull(#HairStyle_vis),1,#HairStyle_vis)" type="number"/>  
+  <Var name="bg_blur" expression="ifelse(isnull(#bg_blur),1,#bg_blur)" type="number"/>  
+  <Var name="dock_y" expression="ifelse(isnull(#dock_y),90,#dock_y)" type="number"/>  
+  <Var name="home_island" expression="ifelse(isnull(#home_island),0,#home_island)" type="number"/>  
+  <Var name="island_y" expression="ifelse(isnull(#island_y),12,#island_y)" type="number"/>  
+  <Var name="bzscale02" expression="ifelse(isnull(#bz_scale_num),0,#bz_scale_num)/100"/>  
+  <Var name="bz_scale" expression="ifelse(#js_pic_vis,#bzscale02,0)"/> 
+   <Var name="home_Gravity_vis" expression="ifelse(isnull(#home_Gravity_vis),0,#home_Gravity_vis)" type="number"/>   
+  <Group x="-8*#gravity_x*#home_Gravity_vis" y="10*#gravity_y*#home_Gravity_vis" w="#screen_width" h="#screen_height" clip="true" pivotX="#screen_width/2" pivotY="#screen_height/2" scale="1+#bz_scale+#GravityScale*#home_Gravity_vis"> 
+    <!-- 静态壁纸 高斯模糊 -->  
+    <Image name="suger_bg" pivotX="#suger_bg.bmp_width/2" pivotY="0" scale="1+#bg_scale" x="#screen_width/2" y="0" src="pic/bz.jpg" srcid="#default_bz" align="center" blur="50"/> 
+  </Group>  
+  <!-- 调暗壁纸 -->  
+  <Rectangle x="0" y="0" w="#screen_width" h="#screen_height" cornerRadius="0,0" fillColor="#ff000000" alpha="255*ifelse(isnull(#darkmode_wallpaper_a),50,#darkmode_wallpaper_a)/100" visibility="#__darkmode ** #bg_dark==1 || #sunRise0Set1==1 ** #bg_dark==2"/>  
+  <Group w="#screen_width" h="#screen_height" clip="true" layered="true"> 
+    <Group visibility="not(#bg_blur)"> 
+      <!-- 静态壁纸 -->  
+      <Group x="-8*#gravity_x*#home_Gravity_vis" y="10*#gravity_y*#home_Gravity_vis" w="#screen_width" h="#screen_height" pivotX="#screen_width/2" pivotY="#screen_height/2" scale="1+#bz_scale+#GravityScale*#home_Gravity_vis"> 
+        <Image name="suger_bg" pivotX="#suger_bg.bmp_width/2" pivotY="0" scale="1+#bg_scale" x="#screen_width/2" y="0" src="pic/bz.jpg" srcid="#default_bz" align="center"/> 
+      </Group>  
+      
+      <!-- 调暗壁纸 -->  
+      <Rectangle x="0" y="0" w="#screen_width" h="#screen_height" cornerRadius="0,0" fillColor="#ff000000" alpha="255*ifelse(isnull(#darkmode_wallpaper_a),50,#darkmode_wallpaper_a)/100" visibility="#__darkmode ** #bg_dark==1 || #sunRise0Set1==1 ** #bg_dark==2"/> 
+    
+    </Group>  
+    <!-- dock 
+    <Group visibility="#dock"> 
+      <Image x="#screen_width/2" y="#screen_height-#dock_y" w="1002" h="#dock_h" src="dock.9.png" tint="@dock_color" align="center" alignV="bottom" xfermodeNum="8"/>  
+      <Image x="#screen_width/2" y="#screen_height-#dock_y" w="1002" h="#dock_h" src="dock.9.png" tint="@dock_color" align="center" alignV="bottom" alpha="#dock_a"/> 
+    </Group> -->  
+    
+     <Rectangle x="#screen_width/2" y="#screen_height-#dock_y" w="994" h="#dock_h" align="center" alignV="bottom" fillColor="#ffffffff" cornerRadius="120" xfermodeNum="8" visibility="#dock"/>  
+    <!--齐刘海-->   
+    
+    
+  </Group>
+  <Group visibility="#DevInfinix_Ani==1">
+  <Array alpha="105*#CR_Ani" count="16" indexName="__CR" visibility="#CR_Ani" x="-8*#gravity_x*#home_Gravity_vis" y="12*#gravity_y*#home_Gravity_vis">**#default_bz==2||#default_bz==8||#default_bz==10||#default_bz==9
+      <Var const="true" expression="rand()*#screen_width" index="#__CR" name="CR_X" size="20" type="number[]"/>
+      <Var const="true" expression="rand()*#screen_height" index="#__CR" name="CR_Y" size="20" type="number[]"/>
+      <Var const="true" expression="80+rand()*120" index="#__CR" name="CR_R" size="20" type="number[]"/>
+      <Var const="true" expression="50+rand()*125" index="#__CR" name="CR_A" size="20" type="number[]"/>
+      <Image align="center" alignV="center" alpha="#CR_A[#__CR]+sin(#time/(1800+10*#__CR))*(#CR_A[#__CR]/20)*#CR_Ani" h="(#CR_R[#__CR]+sin(#time/(1600+20*#__CR))*(#CR_R[#__CR]/3)*#CR_Ani)*2" pivotX="300" pivotY="300" src="bg/circle.png" srcid="#__CR/3" w="(#CR_R[#__CR]+sin(#time/(1600+20*#__CR))*(#CR_R[#__CR]/3)*#CR_Ani)*2" x="#CR_X[#__CR]+sin(#time/(1800+30*#__CR))*(#CR_X[#__CR]/12)*#CR_Ani" y="#CR_Y[#__CR]+sin(#time/(1000+40*#__CR))*(#CR_Y[#__CR]/16)*#CR_Ani"/>
+    </Array>
+  <!--<Array alpha="105*#CR_Ani" count="22" indexName="__CR" visibility="#CR_Ani**#default_bz==8||#default_bz==10||#default_bz==9" x="0" y="10">
+    <Var const="true" expression="rand()*#screen_width" index="#__CR" name="CR_X" size="20" type="number[]"/>
+    <Var const="true" expression="rand()*#screen_height" index="#__CR" name="CR_Y" size="20" type="number[]"/>
+    <Var const="true" expression="80+rand()*120" index="#__CR" name="CR_R" size="20" type="number[]"/>
+    <Var const="true" expression="50+rand()*125" index="#__CR" name="CR_A" size="20" type="number[]"/>
+    <Image align="center" alignV="center" alpha="#CR_A[#__CR]+sin(#time/(1800+10*#__CR))*(#CR_A[#__CR]/20)*#CR_Ani" h="(#CR_R[#__CR]+sin(#time/(1600+20*#__CR))*(#CR_R[#__CR]/3)*#CR_Ani)*2" pivotX="300" pivotY="300" src="circle.png" srcid="#__CR/3" w="(#CR_R[#__CR]+sin(#time/(1600+20*#__CR))*(#CR_R[#__CR]/3)*#CR_Ani)*2" x="#CR_X[#__CR]+sin(#time/(1800+30*#__CR))*(#CR_X[#__CR]/12)*#CR_Ani" y="#CR_Y[#__CR]+sin(#time/(1000+40*#__CR))*(#CR_Y[#__CR]/16)*#CR_Ani"/>
+    
+  </Array>-->
+  </Group>
+  <Group visibility="ifelse(#HairStyle_vis==0,0,#home_island)"> 
+    <!--灵动岛刘海-->  
+    <Rectangle name="bg" x="#screen_width/2+#island_x" y="#island_y" align="center" alignV="top" w="ifelse(#island_id==2|| #island_id==3,470-110*#lh_ani,360+70*#lh_ani_2)" h="100" fillColor="#000000" cornerRadius="90" strokeColor="#00ffffff" weight="3" strokeAlign="inner" visibility="#HairStyle==0"/>  
+    <!--齐刘海-->  
+    <Image src="lh.png" x="#screen_width/2" align="center" visibility="#HairStyle==1"/>  
+    <!--灵动大额头-->  
+    <Group visibility="#HairStyle==2"> 
+      <Image src="forehead.9.png" w="#screen_width" h="280"/>  
+      <Group y="#circle_y+#circle_width/2"> 
+        <Arc x="#screen_width/2" align="center" alignV="center" w="#circle_width" h="#circle_width" fillColor="#00ffffff" startAngle="-90" sweep="360" close="true" strokeColor="#ffffffff" weight="10" strokeAlign="outer" alpha="255*0.3"/>  
+        <Arc x="#screen_width/2" align="center" alignV="center" w="#circle_width" h="#circle_width" fillColor="#00ffffff" startAngle="-90" sweep="360*#battery_level/100" close="false" strokeColor="#15C74B" weight="10" strokeAlign="outer" cap="round"/> 
+      </Group> 
+    </Group>  
+    <Var name="circle_count" expression="ifelse(#HairStyle==3,3,5)"/>  
+    <Var name="circle_gap" expression="ifelse(#HairStyle==3,40,20)"/>  
+    <Var name="circle_gap_count" expression="#circle_count-1"/>  
+    <Var name="circle_width" expression="80"/>  
+    <Var name="circle_x" expression="(#screen_width-#circle_width*#circle_count-#circle_gap*#circle_gap_count)/2+#circle_width/2"/>  
+    <!--遥遥领先刘海-->  
+    <Group visibility="#HairStyle==3"> 
+      <Array count="3" indexName="__i" y="#circle_y"> 
+        <Circle x="#circle_x+(#circle_width+#circle_gap)*#__i" y="#circle_width/2" r="#circle_width/2" fillColor="#ff000000"/> 
+      </Array> 
+    </Group>  
+    <Group visibility="#HairStyle==4"> 
+      <Array count="5" indexName="__i" y="#circle_y"> 
+        <Circle x="#circle_x+(#circle_width+#circle_gap)*#__i" y="#circle_width/2" r="#circle_width/2" fillColor="#ff000000"/> 
+      </Array> 
+    </Group> 
+  </Group> 
+  
+</MiWallpaper>

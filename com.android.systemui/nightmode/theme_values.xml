@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MIUI_Theme_Values template="DarkTemplate">
+<bool name="status_bar_hide_volte">true</bool>
+  <dimen name="statusbar_battery_size"/>
+  <dimen name="statusbar_battery_digit_size">0dp</dimen>
+ <dimen name="status_bar_clock_size">15.2dp</dimen>
+ <dimen name="status_bar_clock_size_new" >15.2dp</dimen>
+ <dimen name="status_bar_system_icon_spacing" >1.5sp</dimen>
+  <dimen name="status_bar_padding_top">13dp</dimen>
+  <dimen name="status_bar_padding_start">4dp</dimen>
+  <dimen name="statusbar_signal_size">0dp</dimen>
+
+ <dimen name="statusbar_wifi_standard_size">0dp</dimen>
+  <dimen name="qs_divider_size">0dp</dimen>
+
+  <dimen name="status_bar_padding_end">1dp</dimen>
+  <dimen name="control_center_universal_corner_radius">35dp</dimen>
+  <color name="dark_mode_icon_color_single_tone">#ff000000</color>
+  <string name="fmt_time_24hour_minute">HH:mm</string>
+  <color name="qs_card_primary_text_enabled_color">#a6000000</color>
+  <color name="qs_card_primary_text_unavailable_color">#7fffffff</color>
+  <color name="qs_card_primary_text_disabled_color">#ffffffff</color>
+  <color name="qs_card_secondary_text_enabled_color">#ff707070</color>
+  <color name="qs_card_secondary_text_unavailable_color">#80ffffff</color>
+  <color name="qs_card_secondary_text_disabled_color">#80ffffff</color>
+  
+ 
+  <color name="qs_icon_enabled_color">#ff1986ec</color>
+  <color name="toggle_slider_icon_color">#fff0b433</color>
+  <color name="miui_volume_expand_button_color_cc">#fff0b433</color>
+  <color name="miui_volume_expand_button_color_blur">#fff0b433</color>
+  <dimen name="big_island_min_width">140dp</dimen>
+  <color name="miui_volume_expand_background">#999d9d9d</color>
+  <color name="secondary_panel_background_color">#30ffffff</color>
+  <color name="miui_volume_expand_background_cc">#30ffffff</color>
+  <color name="qs_disabled_color">#30ffffff</color>
+  <color name="qs_card_unavailable_color">#66000000</color>
+  <color name="qs_detail_enabled_color">#ffffffff</color>
+  <bool name="use_status_bar_tint">false</bool>
+  <dimen name="miui_volume_column_height">165dp</dimen>
+
+
+  <color name="miui_volume_color_accent">#b3ffffff</color>
+
+  <color name="qs_card_enabled_color">#b3ffffff</color>
+  <color name="qs_card_cellular_color">#b3ffffff</color>
+  <color name="qs_enabled_color">#b3ffffff</color>
+  <color name="qs_warning_color">#b3ffffff</color>
+  <color name="qs_card_disabled_color">#30ffffff</color>
+  <color name="external_entry_background_color">#21ffffff</color>
+ 
+  <color name="miui_volume_seekbar_bg_color_cc">#1affffff</color>音量卡片展开音量滑动条背景 
+  <color name="toggle_slider_progress_background_color">#21ffffff</color>音量/亮度滑动条背景 
+      
+  <color name="toggle_slider_detail_progress_background_color">#1affffff</color>
+  <color name="miui_volume_bg_color">#26ffffff</color>
+  <color name="miui_volume_bg_color_collapse">#26ffffff</color>
+  
+  
+  <color name="toggle_slider_progress_color">#b3ffffff</color>亮度音量滑动条进度颜色
+   <color name="toggle_slider_detail_progress_color">#b3ffffff</color>亮度卡片展开进度颜色
+  
+<dimen name="shade_blur_max_radius">16dp</dimen>
+    <dimen name="miui_volume_bg_radius">100dp</dimen>
+   
+   <dimen name="brightness_panel_slider_radius">50dp</dimen>
+    <dimen name="miui_volume_countdown_radius">100dp</dimen>
+    <dimen name="miui_volume_timer_corner_radius">100.0dp</dimen>
+    <dimen name="miui_volume_timer_corner_radius_volume_expanded">100.0dp</dimen>
+    <dimen name="o3_miui_ringer_btn_radius">50dp</dimen>
+     <dimen name="o3_miui_ringer_btn_height">60dp</dimen>
+    
+<dimen name="miui_volume_bg_radius_expanded">100dp</dimen>
+
+<dimen name="miuix_appcompat_seekbar_progress_custom_bg_radius">100.0dp</dimen>
+  <dimen name="o3_miui_cc_volume_radius">100.0dp</dimen>
+
+<dimen name="o3_miui_ringer_btn_radius">100.0dp</dimen>
+<dimen name="o3_miui_ringer_btn_radius_cc">100.0dp</dimen>
+<dimen name="o3_miui_ringer_btn_radius_expended">100.0dp</dimen>
+
+<dimen name="o3_miui_tiny_volume_radius">100.0dp</dimen>
+
+
+<dimen name="o3_miui_volume_radius">100.0dp</dimen>
+
+  <dimen name="statusbar_wifi_generation_size">0sp</dimen>
+  <color name="control_center_detail_item_selectable_background_color_s">#b8ffffff</color>
+
+ 
+  <dimen name="media_player_device_icon_margin">15.0dp</dimen>
+  <dimen name="media_player_device_icon_size">30.0dp</dimen>
+ <dimen name="media_player_cover_radius" >13.0dp</dimen>
+   <dimen name="max_window_blur_radius">14.0dp</dimen>
+   <dimen name="o3_miui_volume_bg_radius">30.0dp</dimen>
+ <color name="notification_element_blend_shade_color_1">#a89d9d9d</color>
+  <color name="notification_element_blend_shade_color_2">#a89d9d9d</color>
+  
+  <color name="media_notification_element_blend_shade_color_1">#5c9d9d9d</color>
+  <color name="media_notification_element_blend_shade_color_2">#5c9d9d9d</color>
+  <color name="media_notification_element_blend_shade_color_3">#5c9d9d9d</color>
+  <color name="focus_notification_element_blend_shade_color_1">#5c9d9d9d</color>
+  <color name="focus_notification_element_blend_shade_color_2">#5c9d9d9d</color>
+  <color name="focus_notification_element_blend_shade_color_3">#5c9d9d9d</color>
+  <color name="notification_element_blend_headsUp_color_1">#c29d9d9d</color>
+  <color name="notification_element_blend_headsUp_color_2">#c29d9d9d</color>
+   
+</MIUI_Theme_Values>

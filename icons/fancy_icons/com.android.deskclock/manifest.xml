@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- đồng hồ -->
+<Icon width="192" height="192" resDensity="480" screenWidth="1080" useVariableUpdater="DateTime.Second" type="awesome" useHardwareCanvas="true" version="2" frameRate="0">
+<!--biến-->
+	<Var name="t1" expression="#time/1000*6"/>
+	<Var name="m_angle" expression="#minute*6" threshold="6"/>
+	<Image x="96" y="96" align="center" alignV="center" src="4.png"/>
+	<!-- giờ-->
+	<Image x="96" y="96" pivotX="96" pivotY="96" alignV="center" align="center" src="1.png" angle="#hour12*30+#minute/2"/>
+	<!-- phút-->
+	<Image x="96" y="96" pivotX="96" pivotY="96" alignV="center" align="center" src="2.png" angle="#m_angle"/>
+	<!-- giây-->
+	<Image x="96" y="96" pivotX="96" pivotY="96" alignV="center" align="center" src="3.png" rotation="#time_sys%60000*0.006"/>
+</Icon>

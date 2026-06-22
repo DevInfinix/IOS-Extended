@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<IconTransform>
+    <PointsMapping>
+        <Point fromX="0" fromY="0" toX="14" toY="14"/>
+        <Point fromX="0" fromY="90" toX="14" toY="76"/>
+        <Point fromX="90" fromY="90" toX="76" toY="76"/>
+        <Point fromX="90" fromY="0" toX="76" toY="14"/>
+    </PointsMapping>
+</IconTransform>

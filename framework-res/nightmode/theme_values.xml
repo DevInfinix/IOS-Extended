@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MIUI_Theme_Values template="DarkTemplate">
+  <!-- 代码规则由 Kronos 整理制作｜未经允许禁止复制抄袭｜不定期检查已上架作品发现后果自负 -->
+  <color name="按钮开关高亮色" >#ff34c759</color>
+  <color name="miuix_appcompat_sliding_button_bar_on_light" >#ff34c759</color>
+  <color name="miuix_appcompat_sliding_button_bar_on_dark" >#ff34c759</color>
+  <dimen name="config_dialogCornerRadius" >20.0dp</dimen>
+  <dimen name="subtitle_corner_radius" >20.0dp</dimen>
+  <dimen name="subtitle_shadow_radius" >20.0dp</dimen>
+  <dimen name="dialog_corner_radius" >20.0dp</dimen>
+  <dimen name="chooser_corner_radius" >20.0dp</dimen>
+  <dimen name="default_magnifier_corner_radius" >20.0dp</dimen>
+  <dimen name="tooltip_corner_radius" >20.0dp</dimen>
+  <dimen name="control_corner_material" >20.0dp</dimen>
+  <dimen name="progress_bar_corner_material" >20.0dp</dimen>
+  <dimen name="status_bar_height_default" >41.5dp</dimen>
+  <integer name="window_translucent_status" >2</integer>
+</MIUI_Theme_Values>

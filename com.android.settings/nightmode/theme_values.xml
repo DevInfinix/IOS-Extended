@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MIUI_Theme_Values template="LightTemplate">
+<dimen name="miuix_appcompat_sliding_button_height">32dip</dimen>
+<dimen name="miuix_appcompat_sliding_button_width">52dip</dimen>
+<dimen name="miuix_appcompat_sliding_button_slider_size">28dip</dimen>
+<dimen name="miuix_appcompat_sliding_button_frame_vertical_padding">12.84dp</dimen>
+<dimen name="miuix_appcompat_sliding_button_mask_vertical_padding">12.84dp</dimen>
+<dimen name="miuix_appcompat_sliding_button_slider_horizontal_padding">2dp</dimen>
+<dimen name="miuix_appcompat_sliding_button_slider_max_offset">2dip</dimen>
+<dimen name="miuix_appcompat_sliding_button_slider_vertical_padding">5dip</dimen>
+<dimen name="sliding_button_border">0.3dp</dimen>
+<dimen name="miuix_appcompat_sliding_button_frame_corner_radius">30dip</dimen>
+<dimen name="miuix_appcompat_sliding_button_mask_vertical_padding">20dp</dimen>开关往内高度
+<dimen name="miuix_appcompat_sliding_button_frame_corner_radius">20dp</dimen>背景圆角
+<dimen name="miuix_appcompat_sliding_button_frame_vertical_padding">20dp</dimen>开关往外高度
+<dimen name="miuix_appcompat_sliding_button_slider_size">21dp</dimen>滑块大小
+<dimen name="miuix_appcompat_sliding_button_slider_max_offset">0dp</dimen>
+<dimen name="sliding_button_border">-1dp</dimen>
+<dimen name="miuix_appcompat_sliding_button_slider_horizontal_padding">2dp</dimen>
+<dimen name="miuix_appcompat_action_bar_horizontal_padding_start">10dp</dimen>
+<color name="miuix_appcompat_sliding_button_bar_on_light">#ff34c759</color>
+<color name="miuix_appcompat_sliding_button_bar_on_dark">#ff30d158</color>
+    <color name="miui_volume_expand_button_color_blur_light">#ccffffff</color>
+    <color name="qs_icon_disabled_color">#ffffffff</color>
+    <color name="miui_volume_color_btn_seleted">#ff3482ff</color>
+    <color name="notification_primary_text_color_light">#ffffffff</color>
+    <color name="qs_customize_entry_button_background_color">#26000000</color>
+    <color name="control_center_detail_secondary_item_icon2_tint_color_n">#ffffffff</color>
+    <color name="折叠通知_数字背景">#1affffff</color>
+    <dimen name="miuix_preference_item_padding_top">20dp</dimen>
+    <dimen name="miuix_recyclerview_card_group_margin_bottom">15dp</dimen>
+    <color name="notification_element_blend_shade_color_2">#26000000</color>
+    <color name="miplay_detail_header_hint_text_color">#66ffffff</color>
+    <color name="miplay_detail_item_selected_color">#ffffffff</color>
+    <color name="miui_volume_disabled_color_cc">#808f8f8f</color>
+    <dimen name="miuix_recyclerview_card_group_margin_top">15dp</dimen>
+    <color name="miui_volume_disabled_color">#808f8f8f</color>
+    <dimen name="miuix_theme_radius_common">26dp</dimen>
+    <color name="toggle_slider_progress_background_color">#7f000000</color>
+    <color name="notification_element_blend_shade_color_1">#1a000000</color>
+    <color name="navigation_bar_home_handle_dark_color">#ff000000</color>
+    <color name="media_player_artist_text_color">#80ffffff</color>
+    <color name="primary_text_default_material_light" package="android">#ffffffff</color>
+    <color name="notification_time_color">#ffffffff</color>
+    <color name="control_center_detail_item_icon2_tint_color_s">#ffffffff</color>
+    <color name="control_center_detail_item_title_text_color_s">#ffffffff</color>
+    <color name="control_center_detail_button_text_color">#ffffffff</color>
+    <dimen name="miui_volume_bg_radius">60dp</dimen>
+    <color name="control_center_detail_item_divider_text_color">#ffffffff</color>
+    <color name="customize_divider_color">#1affffff</color>
+    <color name="miui_volume_expand_button_color_cc">#ff3482ff</color>
+    <color name="notification_progress_horizontal_bg_color" package="android">#cc000000</color>
+    <color name="miplay_detail_header_action">#ffffffff</color>
+    <dimen name="miuix_recyclerview_card_group_radius">26dp</dimen>
+    <dimen name="miuix_appcompat_action_bar_horizontal_padding_start">10dp</dimen>
+    <color name="miuix_recyclerview_card_group_background_dark">#ff1C1C1E</color>
+    <color name="miplay_detail_volume_icon_color">#ff6e747b</color>
+    <color name="高亮色_绿">#ff43c773</color>
+    <color name="notification_element_blend_keyguard_color_2">#26000000</color>
+    <color name="notification_progress_horizontal_progress_color" package="android">#ff3482ff</color>
+    <color name="system_on_surface_light" package="android">#ffffffff</color>
+    <color name="control_center_detail_item_selectable_background_color_n">#0fffffff</color>
+    <color name="qs_control_header_date_color">#ffffffff</color>
+    <color name="header_customize_title_text_color">#e6ffffff</color>
+    <color name="qs_detail_warning_color">#ffffffff</color>
+    <color name="selector_qs_control_miplay_device_item_bg_radius">#ff3482ff</color>
+    <color name="qs_card_primary_text_unavailable_color">#7fffffff</color>
+    <color name="qs_restrict_color">#99ffffff</color>
+    <color name="次要颜色">#99ffffff</color>
+    <color name="miuix_appcompat_sliding_button_bar_on_dark">#ff35C759</color>
+    <color name="dark_color_mode_outer">#00000000</color>
+    <color name="media_player_empty_state_text_color">#40ffffff</color>
+    <color name="qs_card_disabled_color">#7f000000</color>
+    <color name="qs_card_secondary_text_disabled_color">#80ffffff</color>
+    <color name="qs_card_enabled_color">#e5ffffff</color>
+    <dimen name="miuix_preference_high_light_radius">18dp</dimen>
+    <color name="notification_action_text_color">#ffffffff</color>
+    <color name="qs_icon_enabled_color">#ff3482ff</color>
+    <color name="external_entry_background_color">#7f000000</color>
+    <color name="system_neutral1_900" package="android">#ffffffff</color>
+    <color name="miplay_detail_device_icon_color">#ffffffff</color>
+    <color name="qs_disabled_color">#7f000000</color>
+    <color name="control_center_detail_item_icon1_tint_color_n">#ffffffff</color>
+</MIUI_Theme_Values>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MIUI_Theme_Values template="LightTemplate">
+  <color name="search_bar_bg_color_light">#1a000000</color>
+  <color name="search_bar_bg_color_dark">#16ffffff</color>
+  <color name="search_bar_stroke_color_light">#1c000000</color>
+  <color name="search_bar_stroke_color_dark">#00ffffff</color>
+  <color name="miuix_color_blue_light_primary_default">#ff007AFE</color>
+  <color name="miuix_color_blue_dark_primary_default">#ff007AFE</color>
+  <color name="miuix_appcompat_sliding_button_bar_on_light" >#ff35C759</color>  
+  <color name="miuix_appcompat_sliding_button_bar_on_dark" >#ff35C759</color>  
+  <dimen name="miuix_theme_radius_common">16dp</dimen>
+  <dimen name="miuix_preference_item_padding_bottom">12dp</dimen>
+  <dimen name="miuix_preference_item_padding_top">12dp</dimen>
+  <dimen name="miuix_preference_high_light_radius">16dp</dimen>
+  <dimen name="miuix_recyclerview_card_group_margin_top">15dp</dimen>
+  <dimen name="miuix_recyclerview_card_group_margin_bottom">15dp</dimen>
+  <dimen name="miuix_recyclerview_card_group_radius">16dp</dimen>
+  <dimen name="dialer_input_container_margin_top">0.0dp</dimen>
+  <dimen name="dialerpad_padding_top">20.0dp</dimen>
+</MIUI_Theme_Values>
