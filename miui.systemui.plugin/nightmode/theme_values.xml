@@ -49,16 +49,16 @@
   <color name="qs_card_disabled_color">#30ffffff</color>
   <color name="external_entry_background_color">#21ffffff</color>
  
-  <color name="miui_volume_seekbar_bg_color_cc">#1affffff</color>音量卡片展开音量滑动条背景 
-  <color name="toggle_slider_progress_background_color">#21ffffff</color>音量/亮度滑动条背景 
+  <color name="miui_volume_seekbar_bg_color_cc">#1affffff</color><!-- Volume card expanded seekbar background -->
+  <color name="toggle_slider_progress_background_color">#21ffffff</color><!-- Volume/Brightness slider background -->
       
   <color name="toggle_slider_detail_progress_background_color">#1affffff</color>
   <color name="miui_volume_bg_color">#26ffffff</color>
   <color name="miui_volume_bg_color_collapse">#26ffffff</color>
   
   
-  <color name="toggle_slider_progress_color">#b3ffffff</color>亮度音量滑动条进度颜色
-   <color name="toggle_slider_detail_progress_color">#b3ffffff</color>亮度卡片展开进度颜色
+  <color name="toggle_slider_progress_color">#b3ffffff</color><!-- Brightness/Volume progress color -->
+  <color name="toggle_slider_detail_progress_color">#b3ffffff</color><!-- Brightness detail progress color -->
   
 <dimen name="shade_blur_max_radius">13dp</dimen>
     <dimen name="miui_volume_bg_radius">100dp</dimen>

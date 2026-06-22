@@ -4,12 +4,12 @@
 <uiVersion>17</uiVersion>
 <author><![CDATA[DevInfinix]]></author>
 <designer><![CDATA[DevInfinix]]></designer>
-<title><![CDATA[Super26 Color]]></title>
-<description><![CDATA[Channel : https://t.me/miuithemevn/34 
- Phản hồi : https://t.me/kbMiuiVietNam/392
- Facebook : https://www.facebook.com/groups/miuithemevietnam/
+<title><![CDATA[IOS Extended]]></title>
+<description><![CDATA[Channel : https://t.me/devinfinix_labs_discussions 
+ Website : https://thesamstudios.pages.dev
+ GitHub : https://github.com/DevInfinix
  
- DevInfinix GROUP XIAOMI THEME VIỆT NAM]]></description>
+ Designed by DevInfinix - A modern iOS-inspired layout for HyperOS devices.]]></description>
 <authors>
 <author locale="en_US"><![CDATA[DevInfinix]]></author>
 <author locale="zh_CN"><![CDATA[DevInfinix]]></author>
@@ -20,23 +20,25 @@
 <designer locale="vi_VN"><![CDATA[DevInfinix]]></designer>
 </designers>
 <titles>
-<title locale="en_US"><![CDATA[Super26 Color]]></title>
-<title locale="zh_CN"><![CDATA[Super26 Color]]></title>
+<title locale="en_US"><![CDATA[IOS Extended]]></title>
+<title locale="zh_CN"><![CDATA[IOS Extended]]></title>
 </titles>
 <descriptions>
-<description locale="en_US"><![CDATA[Channel : https://t.me/miuithemevn/34 
- Phản hồi : https://t.me/kbMiuiVietNam/392
- Facebook : https://www.facebook.com/groups/miuithemevietnam/
-
- DevInfinix GROUP XIAOMI THEME VIỆT NAM]]></description>
-<description locale="zh_CN"><![CDATA[Channel : https://t.me/miuithemevn/34 
- Phản hồi : https://t.me/kbMiuiVietNam/392
- Facebook : https://www.facebook.com/groups/miuithemevietnam/
- DevInfinix GROUP XIAOMI THEME VIỆT NAM]]></description>
-<description locale="vi_VN"><![CDATA[Channel : https://t.me/miuithemevn/34 
- Phản hồi : https://t.me/kbMiuiVietNam/392
- Facebook : https://www.facebook.com/groups/miuithemevietnam/
- DevInfinix GROUP XIAOMI THEME VIỆT NAM]]></description>
+<description locale="en_US"><![CDATA[Channel : https://t.me/devinfinix_labs_discussions 
+ Website : https://thesamstudios.pages.dev
+ GitHub : https://github.com/DevInfinix
+ 
+ Designed by DevInfinix - A modern iOS-inspired layout for HyperOS devices.]]></description>
+<description locale="zh_CN"><![CDATA[Channel : https://t.me/devinfinix_labs_discussions 
+ Website : https://thesamstudios.pages.dev
+ GitHub : https://github.com/DevInfinix
+ 
+ Designed by DevInfinix - A modern iOS-inspired layout for HyperOS devices.]]></description>
+<description locale="vi_VN"><![CDATA[Channel : https://t.me/devinfinix_labs_discussions 
+ Website : https://thesamstudios.pages.dev
+ GitHub : https://github.com/DevInfinix
+ 
+ Designed by DevInfinix - A modern iOS-inspired layout for HyperOS devices.]]></description>
 </descriptions>
 <miuiAdapterVersion>8.2</miuiAdapterVersion>
 </theme>

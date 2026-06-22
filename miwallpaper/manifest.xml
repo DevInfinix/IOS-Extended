@@ -27,7 +27,7 @@
       <Trigger> 
         <!-- 天气类型简化版；可用于天气图标展示。例如：srcid="#weatherId" -->  
         <VariableCommand name="weatherId" expression="ifelse(#weather_id}25||#weather_id{0,0, (#weather_id}=4**#weather_id{=6||#weather_id}=8**#weather_id{=11||#weather_id==25),4,#weather_id}=13**#weather_id{=17,13 ,#weather_id}=18**#weather_id{=21||#weather_id==23,18,#weather_id)"/>  
-        <VariableCommand name="air_quality_0" expression="ifelse(ge(#weather_aqi,0)*le(#weather_aqi,50),'优',gt(#weather_aqi,50)*le(#weather_aqi,100),'良好',gt(#weather_aqi,100)*le(#weather_aqi,150),'轻度污染',gt(#weather_aqi,150)*ge(#weather_aqi,200),'中度污染',gt(#weather_aqi,200)*le(#weather_aqi,300),'重度污染',gt(#weather_aqi,300),'严重污染','获取信息异常')" type="string"/> 
+        <VariableCommand name="air_quality_0" expression="ifelse(ge(#weather_aqi,0)*le(#weather_aqi,50),'Excellent',gt(#weather_aqi,50)*le(#weather_aqi,100),'Good',gt(#weather_aqi,100)*le(#weather_aqi,150),'Lightly Polluted',gt(#weather_aqi,150)*ge(#weather_aqi,200),'Moderately Polluted',gt(#weather_aqi,200)*le(#weather_aqi,300),'Heavily Polluted',gt(#weather_aqi,300),'Severely Polluted','Network Error')" type="string"/> 
       </Trigger> 
       </ContentProviderBinder> 
     <BroadcastBinder action="android.intent.action.KEYCODE_POWER_UP">
@@ -55,7 +55,7 @@
       <Variable name="island_id" type="number" extra="send_island_id"/>  
       <Variable name="bz_scale_num" type="number" extra="send_bz_scale_num"/>  
       <Variable name="js_pic_vis" type="number" extra="send_js_pic_vis"/>  
-      <Variable name="mSugerKey" type="string" extra="mSugerKey_Config"/>  
+        
       <Variable name="bg_dark" type="number" extra="send_bg_dark"/>  
       <Variable name="darkmode_wallpaper_a" type="number" extra="send_darkmode_wallpaper_a"/>  
       <Variable name="syztsj" type="number" extra="send_syztsj"/>  
@@ -90,7 +90,7 @@
   <Var name="dock_color" expression="ifelse(#__darkmode,'#000000','#ffffff')" type="string"/>  
   <Var name="dock_h" expression="254" type="number" const="true"/>  
   <Var name="bg_scale" expression="ifelse((#screen_height/#suger_bg.bmp_height)}(#screen_width/#suger_bg.bmp_width),#screen_height/#suger_bg.bmp_height,#screen_width/#suger_bg.bmp_width)-1"/>  
-  <Var name="mSugerRightKey" expression="'suger'" type="string"/>  
+    
   <Var name="island_bg_w"> 
     <VariableAnimation loop="false" initPause="true"> 
       <AniFrame value="0" time="0" easeType="BackEaseOut"/>  
