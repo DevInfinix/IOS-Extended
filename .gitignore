@@ -7,3 +7,5 @@ Thumbs.db
 # Scripts and logs
 *.py
 *.log
+*.ps1
+
